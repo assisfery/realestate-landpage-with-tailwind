@@ -7,10 +7,10 @@
     <title>Real Estate</title>
 </head>
 <body>
-    <nav>
+    <nav class="fixed top-0 left-0 right-0">
         <div class="w-4/5 mx-auto py-3 md:flex">
             <div class="flex-none text-center">
-                <a href="#" class="font-bold font-serif px-2 py-1">Real Estate</a>
+                <a href="#" class="font-bold font-serif text-xl px-2 py-1">Real Estate</a>
             </div>
             <div class="grow text-center">
                 <a href="#" class="px-2 py-1">Home</a>
@@ -22,5 +22,47 @@
             </div>
         </div>
     </nav>
+    <header>
+        <div class="w-4/5 mx-auto py-3 h-screen flex justify-center items-center">
+            <div class="bg-slate-300 py-5 rounded-lg h-64 w-full">
+                <h1 class="text-center font-bold text-3xl">
+                    Find A House
+                    <br>
+                    Relax As You Love
+                </h1>
+                <form action="#" class="w-4/5 bg-white rounded-lg mx-auto px-4 py-3 my-3">
+                    <div class="grid grid-cols-2 lg:grid-cols-4">
+                        <div>
+                            <label class="font-bold">Location</label>
+                            <select class="block">
+                                <option>Assomada</option>
+                                <option>Praia</option>
+                                <option>Mindelo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="font-bold">Type</label>
+                            <select class="block">
+                                <option>Apartament</option>
+                                <option>Hotel</option>
+                                <option>Bedrooms</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="font-bold">Range</label>
+                            <select class="block">
+                                <option>$0 - $200</option>
+                                <option>$200 - $350</option>
+                                <option>$350 - max</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="bg-black text-white rounded-full px-3 py-2">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
